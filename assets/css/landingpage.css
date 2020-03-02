@@ -1,0 +1,33 @@
+/* css reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+.landing-bg {
+    background: linear-gradient(rgb(0,0,0,0.2), rgb(0,0,0,0.2)),url(../images/pulag2.jpg);
+    /* background: linear-gradient(rgb(20,40,80,0.5), rgb(20,40,80,0.5)),url(../images/pulag.jpg); */
+    /* background: linear-gradient(rgb(39,73,109,0.5), rgb(39,73,109,0.5)),url(../images/pulag.jpg);  */
+    /* background: linear-gradient(rgb(72,72,104,0.5), rgb(0,0,0,0.7)),url(../images/pulag2.jpg); */
+    /* background: linear-gradient(rgb(24,32,40,0.6), rgb(24,32,40,0.6)),url(../images/pulag.jpg); */
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* .testing {
+    height: 500px;
+    width:500px;
+    background-color: red;
+    background: linear-gradient(rgb(0,0,0,0.2), rgb(0,0,0,0.2)),url(../images/pulag2.jpg);
+    background-position: center;
+    background-size: cover;
+    border: 1px solid black;
+    box-shadow: 5px 5px 10px 0px #000;
+    border-radius: 10px;
+} */
