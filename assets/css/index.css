@@ -1,0 +1,105 @@
+/*css reset*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*carousel items*/
+.carousel-item {
+  height: 100vh;
+  background-size: cover;
+/*  background-position: 100% 50%;*/
+  background-position: center center; 
+}
+
+#item1 {
+  background-image: url("../images/hikers.jpg");
+}
+
+#item2 {
+  background-image: url("../images/pulag.jpg");
+}
+
+#item3 {
+  background-image: url("../images/pulag2.jpg");
+}
+
+/*end carousel items*/
+
+
+/*container section*/
+.container-section {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+  max-width: 30%;
+}
+
+.landpage-btn {
+  border: 1px solid rgba();
+  background-color: rgba(1,1,1,0.1);
+}
+
+.landpage-btn:hover {
+  background-color: rgba(1,1,1,0.5);
+  transition: 0.5s ease;
+}
+
+.landpage-btn:active {
+  background-color: rgba(1,1,1,0.5);
+  transition: 0.5s ease;
+}
+
+
+/*end container section*/
+
+/*container logos*/
+.morefunlogo {
+  width: 12vw;
+  position: absolute;
+  bottom: 3%;
+  right: 3%;
+}
+
+.akyatlogo {
+  width: 10vh;
+  position: absolute;
+  bottom: 10%;
+  right: 6%;
+}
+/*end container logos*/
+
+/*.offset {  
+    box-shadow: 0.3em 0.3em 0 0 black, inset 0.3em 0.3em 0 0 black;
+    
+  }
+
+  .offset:hover {
+      box-shadow: 0 0 0 0, inset 6em 3.5em 0 0;
+  }*/
+
+/*end container section*/
+
+
+
+/*media queries*/
+
+/*mobile styling*/
+@media only screen and (max-width: 400px) {
+    .landpage-btn {
+  opacity: 0;
+}
+
+}
+
+/*tablet*/
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+
+
+/*desktop styling*/
+@media only screen and (min-width: 961px) {
+
+}
