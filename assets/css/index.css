@@ -72,14 +72,7 @@
 }
 /*end container logos*/
 
-/*.offset {  
-    box-shadow: 0.3em 0.3em 0 0 black, inset 0.3em 0.3em 0 0 black;
-    
-  }
 
-  .offset:hover {
-      box-shadow: 0 0 0 0, inset 6em 3.5em 0 0;
-  }*/
 
 /*end container section*/
 
@@ -89,15 +82,13 @@
 
 /*mobile styling*/
 @media only screen and (max-width: 400px) {
-    .landpage-btn {
-  opacity: 0;
-}
-
+    
 }
 
 /*tablet*/
 @media only screen and (min-width: 401px) and (max-width: 960px) {
 
+}
 
 /*desktop styling*/
 @media only screen and (min-width: 961px) {
