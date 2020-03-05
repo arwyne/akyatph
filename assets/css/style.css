@@ -12,12 +12,99 @@ body, html {
     scroll-behavior: smooth;
 }
 
+.animated {
+	animation-timing-function: ease-in-out;
+	animation-duration: 1s;
+}
+
+/* landing page */
+/*carousel items*/
+.land-carousel-item {
+	height: 100vh;
+	background-size: cover;
+	background-position: center center; 
+  }
+  
+#land-item1 {
+	background-image: url("../images/mayon1.jpg");
+}
+  
+#land-item2 {
+	background-image: url("../images/pulag3.jpg");
+}
+  
+#land-item3 {
+	background-image: url("../images/pinatubo1.jpg");
+}
+  
+/*end carousel items*/
+.land-text {
+	color: #082040;
+	font-size: 2.5rem;
+	font-weight: 600;
+	min-height: 15vh;
+	display: flex;
+	align-items: center;
+	background-color: rgba(255, 255, 255, 0.4);
+	padding: 20px;
+	justify-content: center;
+	border-radius: 10px;
+	box-shadow: 0px 8px 6px -6px #000;
+}  
+
+.land-container-section {
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	text-align: center;
+	min-width: 45%;
+}
+  
+.landpage-btn {
+	background-color: rgba(255,255,255,0.4);
+	min-width: 30%;
+	font-weight: 500;
+	font-size: 1.3rem;
+	box-shadow: 0px 8px 6px -6px #000;
+	margin-top: 10px;
+	border-radius: 5px;
+}
+
+.landpage-btn:hover {
+	color: #fbfbf8;
+	transition: 1s ease-in-out;
+}
+  
+.landpage-btn:hover {
+	background-color: rgba(1,1,1,0.5);
+	transition: 0.5s ease;
+}
+  
+.landpage-btn:active {
+	background-color: rgba(1,1,1,0.5);
+	transition: 0.5s ease;
+}
+  
+.morefunlogo {
+	width: 200px;
+	position: absolute;
+	bottom: 3%;
+	right: 3%;
+}
+  
+.akyatlogo {
+	width: 100px;
+	position: absolute;
+	bottom: 10%;
+	right: 5%;
+}
+ 
+/* end landing page */
 
 /* navbar and footer */
 .navbar, footer {
 	background-color: #1d3254;
-	/*border-bottom: 1px solid #fbfbf8;
-	;*/
 }
 
 .navbar {
@@ -77,7 +164,7 @@ footer {
 
 /* home page */
 .home-bg {
-	background: linear-gradient(rgba(29, 50, 84, 0.3), rgb(29,50,84,0.3)),url(../images/mt-apo.jpg);
+	background: linear-gradient(rgba(29, 50, 84, 0.3), rgb(29,50,84,0.3)),url(../images/home-bg.jpg);
 	height: 100vh;
 	background-size: cover;
 	background-position: center;
@@ -95,13 +182,12 @@ footer {
 
 .home-container {
 	position: absolute;
-	top: 40%;
+	top: 37%;
 	left: 50%;
 	transform: translate(-50%,-50%);
 }
 
 .container-bg {
-	/*background-color: #2f466f;*/
 	background-color: #202D43;
 	padding-top: 5vh;
 	padding-bottom:  2vh;
@@ -127,14 +213,14 @@ footer {
 }
 
 .akyat-desc, .akyat-quote {
-	color: #082040;
+	color: #fbfbf8;
 	font-size: 1.5rem;
 }
 
 .div-para {
-	background: linear-gradient(rgba(29, 50, 84, 0.1), rgb(29,50,84,0.1)),url(../images/pulag.jpg);;
+	background: linear-gradient(rgba(29, 50, 84, 0.1), rgb(29,50,84,0.1)),url(../images/pulag3.jpg);;
 	background-size: cover;
-	background-position: center;
+	background-position: bottom;
 	height: 40vh;
 	background-attachment: fixed;
 	padding: 0;
@@ -166,6 +252,7 @@ footer {
 	overflow: hidden;
 	background-color: #1d3254;
 	border-radius: 10px;
+	max-height: 220px;
 }
 
 .card-shadow{
@@ -229,7 +316,6 @@ footer {
 
 .img-trivia {
 	border-radius: 10px;
-	/*box-shadow: 0px 8px 6px -6px #000;*/
 	box-shadow: 8px 8px 10px -6px #000;
 }
 /* end home page */
@@ -240,7 +326,6 @@ footer {
 	background-color: #202D43;
 	margin-bottom: 30px;
 	padding: 25px;
-	/*box-shadow: 0px 8px 6px -6px #000;*/
 	box-shadow: 8px 8px 10px -6px #000;
 	border-radius: 5px;
 	font-family: 'Passero One', sans-serif;
@@ -250,11 +335,9 @@ footer {
 }
 
 .mountain-section {
-	/*background-color: #2f466f;*/
 	background-color: #202D43;
 	margin-bottom: 30px;
 	padding: 25px;
-	/*box-shadow: 0px 8px 6px -6px #000;*/
 	box-shadow: 8px 8px 10px -6px #000;
 	border-radius: 5px;
 }
@@ -284,44 +367,6 @@ hr {
 	background-color: #fbfbf8;
 }
 
-/*carousel section*/
-
-.mountain-carousel-item {
-  height: 35vh;
-  background-size: cover;
-/*  background-position: 100% 50%;*/
-  background-position: center center; 
-}
-
-/*mtpulag*/
-#pulag1 {
-	background-image: url("../images/hikers.jpg");
-}
-
-#pulag2 {
-	background-image: url("../images/pulag.jpg");
-}
-
-#pulag3 {
-	background-image: url("../images/pulag2.jpg");
-}
-
-/*mtapo*/
-#apo1 {
-	background-image:  url("../images/");
-}
-
-#apo2 {
-	background-image:  url("../images/");
-}
-
-#apo3 {
-	background-image:  url("../images/");
-}
-
-
-/*end carousel section*/
-
 b {
 	color:#4a7dd4;
 }
@@ -330,37 +375,246 @@ b {
 	color: #8aa5d4;
 }
 
+/*carousel section*/
 
+.mountain-carousel-item {
+  height: 35vh;
+  background-size: cover;
+  background-position: center center; 
+}
+
+/*mt pulag*/
+#pulag1 {
+	background-image: url("../images/pulag1.jpg");
+}
+
+#pulag2 {
+	background-image: url("../images/pulag2.jpg");
+}
+
+#pulag3 {
+	background-image: url("../images/pulag3.jpg");
+}
+
+/*mt apo*/
+#apo1 {
+	background-image:  url("../images/apo1.jpg");
+}
+
+#apo2 {
+	background-image:  url("../images/apo2.jpg");
+}
+
+#apo3 {
+	background-image:  url("../images/apo3.jpg");
+}
+
+/*mt mariveles*/
+#mariveles1 {
+	background-image:  url("../images/mariveles1.jpg");
+}
+
+#mariveles2 {
+	background-image:  url("../images/mariveles2.jpg");
+}
+
+#mariveles2 {
+	background-image:  url("../images/mariveles3.JPG");
+}
+
+/*mt mayon*/
+#mayon1 {
+	background-image:  url("../images/mayon1.jpg");
+}
+
+#mayon2 {
+	background-image:  url("../images/mayon2.jpg");
+}
+
+#mayon3 {
+	background-image:  url("../images/mayon3.jpg");
+}
+
+/*mt pinatubo*/
+#pinatubo1 {
+	background-image:  url("../images/pinatubo1.jpg");
+}
+
+#pinatubo2 {
+	background-image:  url("../images/pinatubo2.jpg");
+}
+
+#pinatubo3 {
+	background-image:  url("../images/pinatubo3.jpg");
+}
+
+/*mt kanlaon*/
+#kanlaon1 {
+	background-image:  url("../images/kanlaon1.jpg");
+}
+
+#kanlaon2 {
+	background-image:  url("../images/kanlaon2.jpg");
+}
+
+#kanlaon3 {
+	background-image:  url("../images/kanlaon3.jpg");
+}
+
+/*taal volcano*/
+#taal1 {
+	background-image:  url("../images/taal1.jpg");
+}
+
+#taal2 {
+	background-image:  url("../images/taal2.jpg");
+}
+
+#taal3 {
+	background-image:  url("../images/taal3.jpeg");
+}
+
+/*mt guiting-guiting*/
+#guiting1 {
+	background-image:  url("../images/guiting1.jpg");
+}
+
+#guiting2 {
+	background-image:  url("../images/guiting2.jpg");
+}
+
+#guiting3 {
+	background-image:  url("../images/guiting3.jpg");
+}
+
+/*mtpico*/
+#pico1 {
+	background-image:  url("../images/pico1.jpg");
+}
+
+#pico2 {
+	background-image:  url("../images/pico2.jpg");
+}
+
+#pico3 {
+	background-image:  url("../images/pico3.jpg");
+}
+
+
+/*end carousel section*/
 /*end mountains page*/
 
 
 /*about page*/
-.about-page-container {
-	margin-top: 15vh;
-	max-width: 960px;
-	height: 1000px;
-	background-color: steelblue;
+.heading-container {
+	padding: 0;
 }
 
+.about-page-heading {
+	font-size: 2.5rem;
+	background-color: #202D43;
+	margin-top: 15vh;
+	padding: 25px;
+	box-shadow: 0px 8px 6px -6px #000;
+	border-radius: 5px;
+	font-family: 'Passero One', sans-serif;
+}
+
+.about-page-container {
+	padding-top: 30px;
+	max-width: 960px;
+	background-color:#202D43;
+	box-shadow: 8px 8px 10px -6px #000;
+	border-radius: 5px;
+}
+
+.about-para {
+	text-align: justify;
+	max-width: 600px;
+	margin: 0 auto;
+}
+
+.img-figure {
+	margin-bottom: 25px;
+}
+
+.about-desc {
+	margin-bottom: 20px;
+}
+
+
+.about-img {
+	height: 40vh;
+	box-shadow: 8px 8px 10px -6px #000;
+}
+
+.about-vid {
+	text-align: center;
+	margin: 10px auto;
+	margin-bottom: 20px;
+}
 /*end about page*/
 
 /*media queries*/
 
 /*mobile styling*/
 @media only screen and (max-width: 400px) {
+	/* landing page */
+	.land-container-section {
+		max-width: 50%;
+	}
+
+	.land-text {
+		color: #082040;
+		font-size: 1.5rem;
+		height: 100%;
+		padding: 10px;
+	}  
+	
+	.land-container-section {
+		min-width: 60%;
+	}
+	  
+	.landpage-btn {
+		min-width: 30%;
+		font-size: 1rem;
+		margin-top: 0;
+	}
+
+	.morefunlogo {
+		width: 120px;
+		position: absolute;
+		bottom: 10%;
+		right: 50%;
+		transform: translate(50%);
+	}
+	  
+	.akyatlogo {
+		width: 70px;
+		position: absolute;
+		bottom: 15%;
+		right:50%;
+		transform: translate(50%);
+	}
+	  
+	/* end landing page */
 	/*home page*/
 	.home-container {
-	top: 40%;
-}
+		top: 40%;
+	}
 
 	.home-bg {
 		margin-bottom: 0;
 	}
 
+	.para-img {
+		background-attachment: scroll;
+	}
+
 	#logo {
-	height: 6vh;
-	position: absolute;
-	transform: translate(0, -50%);
+		height: 6vh;
+		position: absolute;
+		transform: translate(0, -50%);
 	}
 
 	.logo2 {
@@ -372,7 +626,6 @@ b {
 		margin-top: 0;
 		font-size: 3.5rem;
 		text-align: center;
-		
 	}
 
 	.akyat-desc {
@@ -381,10 +634,6 @@ b {
 
 	.akyat-quote {
 		font-size: 1.2rem;
-	}
-
-	.para-img {
-		background-attachment: scroll;
 	}
 
 	.navbar-nav{
@@ -409,8 +658,17 @@ b {
 		margin: 0;
 	}
 
+	.col-img-trivia {
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	.row-container {
+		margin-bottom: 0;
+	}
+
 	.card {
-		margin-bottom: 15px;
+		margin-bottom: 20px;
 	}
 
 	/*end home page*/
@@ -451,19 +709,36 @@ b {
 	/*end mountain page*/
 
 	/*about page*/
-	.about-page-container {
-
+	.about-vid {
+		display: none;
 	}
 	/*end about page*/
+
+	
 
 }
 
 /*tablet*/
 @media only screen and (min-width: 401px) and (max-width: 960px) {
+	/* landing page */
+	.morefunlogo {
+		width: 180px;
+		position: absolute;
+		bottom: 5%;
+	}
+	  
+	.akyatlogo {
+		width: 100px;
+		position: absolute;
+		bottom: 10%;
+		right: 7%;
+	}
+	/* end landing page */
+
 	#logo {
-	height: 6vh;
-	position: absolute;
-	transform: translate(0, -50%);
+		height: 6vh;
+		position: absolute;
+		transform: translate(0, -50%);
 	}
 
 	.main-container {
@@ -475,6 +750,11 @@ b {
 		height: 20vh;
 		
 	}
+
+	.card {
+		max-height: 150px;
+	}
+
 
 }
 
