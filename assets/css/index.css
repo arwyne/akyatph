@@ -6,22 +6,22 @@
 }
 
 /*carousel items*/
-.carousel-item {
+.land-carousel-item {
   height: 100vh;
   background-size: cover;
 /*  background-position: 100% 50%;*/
   background-position: center center; 
 }
 
-#item1 {
+#land-item1 {
   background-image: url("../images/hikers.jpg");
 }
 
-#item2 {
+#land-item2 {
   background-image: url("../images/pulag.jpg");
 }
 
-#item3 {
+#land-item3 {
   background-image: url("../images/pulag2.jpg");
 }
 
@@ -29,7 +29,7 @@
 
 
 /*container section*/
-.container-section {
+.land-container-section {
   position: absolute;
   top: 30%;
   left: 50%;

@@ -9,6 +9,7 @@
   <title>Akyat PH</title>
 
   <!-- fav icon -->
+  <link rel="icon" href="./assets/images/favicon.png">
 
   <!-- fontawesome icons -->
   <script src="https://kit.fontawesome.com/763fd16ca4.js" crossorigin="anonymous"></script>
@@ -23,11 +24,54 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
 
   <!-- external css -->
-  <link rel="stylesheet" type="text/css" href="./assets/css/about.css">
+  <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
 </head>
 
 <body>
+  <header>
+    <nav class="navbar navbar-expand-md fixed-top">
+      <!-- logo -->
+      <a class="navbar-brand" href="#">
+        <img id="logo" src="./assets/images/logo1.png" alt="">
+      </a>
 
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+        <span><i class="fas fa-angle-double-down"></i></span>
+      </button>
+
+      <div id="navbarResponsive" class="navbar-collapse collapse">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="./home.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./mountains.html">Mountains</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#">About</a>
+          </li>
+        </ul>
+      </div>
+
+      <ul class="navbar-nav" id="iconlist">
+        <li class="nav-item">
+          <a href="https://www.facebook.com/arwyne" target="_blank"><i class="fab fa-facebook-square socialmedia-icons"></i></a>
+        </li>
+        <li class="nav-item">
+          <a href="https://www.instagram.com/arwinsurewin" target="_blank"><i class="fab fa-instagram socialmedia-icons"></i></a>
+        </li>
+        <li class="nav-item">
+          <a href="https://www.linkedin.com/in/arwyne-de-guzman-904483b3/" target="_blank"><i class="fab fa-linkedin socialmedia-icons"></i></a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="container about-page-container">
+    <h2>About Us Page</h2>
+
+  </div>
+<!-- 
   <div class="container-fluid">
     <div class="row">
       <div class="col-md-6 bg-primary">
@@ -50,14 +94,14 @@
       </div>
 
       <div class="col-md-6">
-       <!--  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3861.7311684783376!2d121.03125941438788!3d14.55735988203865!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c9b8d33b2c6d%3A0xb0c2f766338a92bd!2sZuitt%20Makati!5e0!3m2!1sfil!2sph!4v1583289744573!5m2!1sfil!2sph" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe> -->
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3861.7311684783376!2d121.03125941438788!3d14.55735988203865!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c9b8d33b2c6d%3A0xb0c2f766338a92bd!2sZuitt%20Makati!5e0!3m2!1sfil!2sph!4v1583289744573!5m2!1sfil!2sph" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
 
        <iframe class="embed-responsive-item gmap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3861.7311684783376!2d121.03125941438788!3d14.55735988203865!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c9b8d33b2c6d%3A0xb0c2f766338a92bd!2sZuitt%20Makati!5e0!3m2!1sfil!2sph!4v1583289744573!5m2!1sfil!2sph" frameborder="0"allowfullscreen=""></iframe>
 
      </div>
    </div>
  </div>
-  
+   -->
 
 
   <!-- <section class="gitna">
@@ -77,7 +121,16 @@
   </section>
   end section -->
 
-
+  <footer class="footer">
+    <div class="container-disclaimer">
+      <p class="text-center mb-0">
+        Arwyne De Guzman | Zuitt Coding Bootcamp &copy; 2020
+      </p>
+      <p class="text-center mb-0">Information contained within this web site is intended solely for educational
+        purposes
+      only</p>
+    </div>
+  </footer>
 
   <!-- jQuery library -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>

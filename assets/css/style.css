@@ -16,8 +16,16 @@ body, html {
 /* navbar and footer */
 .navbar, footer {
 	background-color: #1d3254;
-	border-bottom: 1px solid #fbfbf8;
-	border-top: 1px solid #fbfbf8;
+	/*border-bottom: 1px solid #fbfbf8;
+	;*/
+}
+
+.navbar {
+	box-shadow: 0px 8px 6px -6px #000;
+}
+
+footer {
+	box-shadow: 0 -8px 10px -6px #000000;
 }
 
 .container-disclaimer {
@@ -74,6 +82,7 @@ body, html {
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
+	box-shadow: 0px 8px 6px -6px #000;
 }
 
 .text-right-md {
@@ -86,20 +95,25 @@ body, html {
 
 .home-container {
 	position: absolute;
-	top: 30%;
+	top: 40%;
 	left: 50%;
 	transform: translate(-50%,-50%);
 }
 
-.kakaiba {
+.container-bg {
 	/*background-color: #2f466f;*/
 	background-color: #202D43;
 	padding-top: 5vh;
 	padding-bottom:  2vh;
+	box-shadow: 8px 8px 10px -6px #000;
 }
 
 .home-brand, .home-text, .home-quote {
 	text-align: center;
+}
+
+.logo-holder {
+	text-align: right;
 }
 
 .akyat-text {
@@ -109,10 +123,11 @@ body, html {
 	margin-top: 80px;
 	border-bottom: 1px solid #fbfbf8;
 	color: #082040;
+	text-align: left;
 }
 
 .akyat-desc, .akyat-quote {
-	color: #305088;
+	color: #082040;
 	font-size: 1.5rem;
 }
 
@@ -122,11 +137,13 @@ body, html {
 	background-position: center;
 	height: 40vh;
 	background-attachment: fixed;
+	padding: 0;
+	box-shadow: 8px 8px 10px -6px #000;
 }
 
 .container {
 	text-align: center;
-	max-width: 1000px;
+	max-width: 960px;
 	margin-bottom: 5vh;
 }
 
@@ -206,13 +223,28 @@ body, html {
 	margin-top: 10px;
 }
 
+.row-trivia {
+	text-align: justify;
+}
+
 .img-trivia {
 	border-radius: 10px;
-	box-shadow: 0px 8px 6px -6px #000;
+	/*box-shadow: 0px 8px 6px -6px #000;*/
+	box-shadow: 8px 8px 10px -6px #000;
 }
 /* end home page */
 
 /*mountains page*/
+.mountain-page-heading {
+	font-size: 2.5rem;
+	background-color: #202D43;
+	margin-bottom: 30px;
+	padding: 25px;
+	/*box-shadow: 0px 8px 6px -6px #000;*/
+	box-shadow: 8px 8px 10px -6px #000;
+	border-radius: 5px;
+	font-family: 'Passero One', sans-serif;
+}
 .mountain-page-container {
 	margin-top: 15vh;
 }
@@ -222,12 +254,13 @@ body, html {
 	background-color: #202D43;
 	margin-bottom: 30px;
 	padding: 25px;
-	box-shadow: 0px 8px 6px -6px #000;
+	/*box-shadow: 0px 8px 6px -6px #000;*/
+	box-shadow: 8px 8px 10px -6px #000;
 	border-radius: 5px;
 }
 
 .mountain-section h3 {
-	font-size: 2.5rem;
+	font-size: 2rem;
 }
 
 
@@ -251,37 +284,82 @@ hr {
 	background-color: #fbfbf8;
 }
 
-.carousel-item {
+/*carousel section*/
+
+.mountain-carousel-item {
   height: 35vh;
   background-size: cover;
 /*  background-position: 100% 50%;*/
   background-position: center center; 
 }
 
-.carousel-item:hover {
+/*mtpulag*/
+#pulag1 {
+	background-image: url("../images/hikers.jpg");
 }
 
-#item1 {
-  background-image: url("../images/hikers.jpg");
+#pulag2 {
+	background-image: url("../images/pulag.jpg");
 }
 
-#item2 {
-  background-image: url("../images/pulag.jpg");
+#pulag3 {
+	background-image: url("../images/pulag2.jpg");
 }
 
-#item3 {
-  background-image: url("../images/pulag2.jpg");
+/*mtapo*/
+#apo1 {
+	background-image:  url("../images/");
 }
+
+#apo2 {
+	background-image:  url("../images/");
+}
+
+#apo3 {
+	background-image:  url("../images/");
+}
+
+
+/*end carousel section*/
+
+b {
+	color:#4a7dd4;
+}
+
+.checked {
+	color: #8aa5d4;
+}
+
+
 /*end mountains page*/
+
+
+/*about page*/
+.about-page-container {
+	margin-top: 15vh;
+	max-width: 960px;
+	height: 1000px;
+	background-color: steelblue;
+}
+
+/*end about page*/
 
 /*media queries*/
 
 /*mobile styling*/
 @media only screen and (max-width: 400px) {
+	/*home page*/
+	.home-container {
+	top: 40%;
+}
+
+	.home-bg {
+		margin-bottom: 0;
+	}
+
 	#logo {
 	height: 6vh;
 	position: absolute;
-/*	top: 50%;*/
 	transform: translate(0, -50%);
 	}
 
@@ -293,6 +371,7 @@ hr {
 	.akyat-text {
 		margin-top: 0;
 		font-size: 3.5rem;
+		text-align: center;
 		
 	}
 
@@ -320,15 +399,23 @@ hr {
 		display: none;
 	}
 
-	.landing-brand {
-		margin-top: 100px;
+	.container-quote {
+		margin-bottom: 0;
 	}
 
 	.container-quote p{
 		font-size: 1.8rem;
 		height: 100%;
-		
+		margin: 0;
 	}
+
+	.card {
+		margin-bottom: 15px;
+	}
+
+	/*end home page*/
+
+	/*footer*/
 
 	.container-disclaimer {
 		font-size: 0.8rem;
@@ -339,6 +426,10 @@ hr {
 	.container-disclaimer {
 		padding-top: 5px;
 		padding-bottom: 5px;
+	}
+
+	.container-disclaimer p{
+		padding: 10px;
 	}
 
 	.container-disclaimer .name{
@@ -351,7 +442,19 @@ hr {
 		padding: 0 10px;
 	}
 
+	/*end footer*/
+
 	/*mountain page*/
+	.mountain-page-container {
+		margin-top: 10vh;
+	}
+	/*end mountain page*/
+
+	/*about page*/
+	.about-page-container {
+
+	}
+	/*end about page*/
 
 }
 
@@ -368,7 +471,7 @@ hr {
 	}
 
 	.container-quote p{
-		font-size: 2.5rem;
+		font-size: 3rem;
 		height: 20vh;
 		
 	}

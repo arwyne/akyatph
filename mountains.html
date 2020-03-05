@@ -9,6 +9,7 @@
   <title>Akyat PH</title>
 
   <!-- fav icon -->
+  <link rel="icon" href="./assets/images/favicon.png">
 
   <!-- fontawesome icons -->
   <script src="https://kit.fontawesome.com/763fd16ca4.js" crossorigin="anonymous"></script>
@@ -29,47 +30,48 @@
 
 <body>
   <header>
-    <nav class="navbar navbar-expand-md navbar-dark fixed-top">
-      <!-- logo -->
-      <a class="navbar-brand" href="#">
-        <img id="logo" src="./assets/images/logo1.png" alt="">
-      </a>
+            <nav class="navbar navbar-expand-md fixed-top">
+                <!-- logo -->
+                <a class="navbar-brand" href="#">
+                    <img id="logo" src="./assets/images/logo1.png" alt="">
+                </a>
 
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+                    <span><i class="fas fa-angle-double-down"></i></span>
+                </button>
 
-      <div id="navbarResponsive" class="navbar-collapse collapse">
-        <ul class="navbar-nav mx-auto">
-          <li class="nav-item">
-            <a class="nav-link active" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Mountains</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
-          </li>
-        </ul>
-      </div>
+                <div id="navbarResponsive" class="navbar-collapse collapse">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./home.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="./mountains.html">Mountains</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                    </ul>
+                </div>
 
-      <ul class="navbar-nav" id="iconlist">
-        <li class="nav-item">
-          <a href="#"><i class="fab fa-facebook-square socialmedia-icons"></i></a>
-        </li>
-        <li class="nav-item">
-          <a href="#"><i class="fab fa-instagram socialmedia-icons"></i></a>
-        </li>
-        <li class="nav-item">
-          <a href="#"><i class="fab fa-linkedin socialmedia-icons"></i></a>
-        </li>
-      </ul>
-    </nav>
-  </header>
+                <ul class="navbar-nav" id="iconlist">
+                    <li class="nav-item">
+                        <a href="https://www.facebook.com/arwyne" target="_blank"><i class="fab fa-facebook-square socialmedia-icons"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="https://www.instagram.com/arwinsurewin" target="_blank"><i class="fab fa-instagram socialmedia-icons"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="https://www.linkedin.com/in/arwyne-de-guzman-904483b3/" target="_blank"><i class="fab fa-linkedin socialmedia-icons"></i></a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
 
   <section class="section-mountains">
 
     <div class="container mountain-page-container">
+      <h2 class="mountain-page-heading">Must Climb Mountains in the Philippines</h2>
 
       <div id="mtpulag" class="mountain-section">
         <h3>Mount Pulag</h3>
@@ -104,9 +106,15 @@
                 </ol>
 
                 <div class="carousel-inner">
-                  <div id="item1" class="carousel-item active"></div>
-                  <div id="item2" class="carousel-item"></div>
-                  <div id="item3" class="carousel-item"></div>
+                  <div id="pulag1" class="carousel-item moutain-carousel-item active">
+                    
+                  </div>
+                  <div id="pulag2" class="carousel-item moutain-carousel-item">
+                    
+                  </div>
+                  <div id="pulag3" class="carousel-item moutain-carousel-item">
+                    
+                  </div>
                 </div>
 
                 <a class="carousel-control-prev" href="#carousel-landing-page" role="button" data-slide="prev">
@@ -165,9 +173,9 @@
                 </ol>
 
                 <div class="carousel-inner">
-                  <div id="item1" class="carousel-item active"></div>
-                  <div id="item2" class="carousel-item"></div>
-                  <div id="item3" class="carousel-item"></div>
+                  <div id="apo1" class="carousel-item active mountain-carousel-item"></div>
+                  <div id="apo2" class="carousel-item mountain-carousel-item"></div>
+                  <div id="apo3" class="carousel-item mountain-carousel-item"></div>
                 </div>
 
                 <a class="carousel-control-prev" href="#carousel-landing-page" role="button" data-slide="prev">
@@ -506,6 +514,129 @@
 
       </div>
 
+      <div id="mtguiting" class="mountain-section">
+        <h3>Mount Guiting-Guiting</h3>
+        <div class="row">
+          <div class="col-md-6">
+            <ul class="mountain-quick-desc">
+              <li><p class="card-text"><b>Difficulty:</b>
+                <span class="fas fa-star checked"></span>
+                <span class="fas fa-star checked"></span>
+                <span class="fas fa-star checked"></span>
+                <span class="fas fa-star checked"></span>
+                <span class="fas fa-star checked"></span>
+                Very Hard
+              </p></li>
+              <li><p><b>Location:</b> Romblon</p></li>
+              <li><p><b>Height:</b> 2,058 meters</p></li>
+              <li><p><b>Time to Summit:</b> Approximately 5 hours</p></li>
+            </ul>
+
+          </div>
+
+          <div class="col-md-6">
+            <figure>
+              <div id="carousel-landing-page" class="carousel slide" data-ride="carousel" data-interval="4000"
+              data-pause="false">
+              
+                <ol class="carousel-indicators">
+                <li data-target="#carousel-landing-page" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-landing-page" data-slide-to="1"></li>
+                <li data-target="#carousel-landing-page" data-slide-to="2"></li>
+                </ol>
+
+                <div class="carousel-inner">
+                  <div id="item1" class="carousel-item active"></div>
+                  <div id="item2" class="carousel-item"></div>
+                  <div id="item3" class="carousel-item"></div>
+                </div>
+
+                <a class="carousel-control-prev" href="#carousel-landing-page" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carousel-landing-page" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+
+              <figcaption>Mount Guiting-Guiting</figcaption>
+            </figure>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="offset-md-1 col-md-10">
+            <p class="mountain-desc">Known as the ultimate Philippine mountaineering experience, Mount Guiting-Guiting is a challenging adventure to be had! Translated as the “Saw-toothed Mountain,” let’s just say that the mountain has more than its fair share of nearly vertical, jagged rock peaks. As well as dangerous terrain, Mount Guiting-Guiting is also one of the most biologically-diverse of the Philippine mountains, so expect to see wild animals in its forests. With 87° slopes and tricky summits, this trek is only for the physically fit and most adventurous!
+
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+      <div id="mtpico" class="mountain-section">
+        <h3>Mount Pico De Loro</h3>
+        <div class="row">
+          <div class="col-md-6">
+            <ul class="mountain-quick-desc">
+              <li><p class="card-text"><b>Difficulty:</b>
+                <span class="fas fa-star checked"></span>
+                <span class="fas fa-star checked"></span>
+                <span class="fas fa-star checked"></span>
+                <span class="fas fa-star checked"></span>
+                <span class="fas fa-star checked"></span>
+                Medium
+              </p></li>
+              <li><p><b>Location:</b> Cavite</p></li>
+              <li><p><b>Height:</b> 664 meters</p></li>
+              <li><p><b>Time to Summit:</b> 5 hours (depending on the path)</p></li>
+            </ul>
+
+          </div>
+
+          <div class="col-md-6">
+            <figure>
+              <div id="carousel-landing-page" class="carousel slide" data-ride="carousel" data-interval="4000"
+              data-pause="false">
+              
+                <ol class="carousel-indicators">
+                <li data-target="#carousel-landing-page" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-landing-page" data-slide-to="1"></li>
+                <li data-target="#carousel-landing-page" data-slide-to="2"></li>
+                </ol>
+
+                <div class="carousel-inner">
+                  <div id="item1" class="carousel-item active"></div>
+                  <div id="item2" class="carousel-item"></div>
+                  <div id="item3" class="carousel-item"></div>
+                </div>
+
+                <a class="carousel-control-prev" href="#carousel-landing-page" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carousel-landing-page" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+
+              <figcaption>Mount Pico De Loro</figcaption>
+            </figure>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="offset-md-1 col-md-10">
+            <p class="mountain-desc">Another popular mountain climb is Mount Pico De Loro which is frequented by people who live in Manila during the weekends. Named by Spanish colonizers as the “Parrot’s Beak” in the 1500s, this particular mountain has some really interesting natural rock formations. This is a highly recommended summit climb for multiple reasons, the main being that it is ideal for beginners; the trail isn’t as challenging as other Philippine mountains as the terrain isn’t as steep. While the trail itself is doable, as soon as you reach the summit, you will be faced with the monolith, a tall protruding rock which you can climb using ropes for assistance. The monolith gives you a bird’s eye view of forests, volcanoes, and beaches in the area, showing off a view that is incredibly diverse.
+
+            </p>
+          </div>
+        </div>
+
+      </div>
 
     </div>
 
