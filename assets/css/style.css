@@ -16,8 +16,8 @@ body, html {
 /* navbar and footer */
 .navbar, footer {
 	background-color: #1d3254;
-	border-bottom: 2px solid #fbfbf8;
-	border-top: 2px solid #fbfbf8;
+	border-bottom: 1px solid #fbfbf8;
+	border-top: 1px solid #fbfbf8;
 }
 
 .container-disclaimer {
@@ -92,7 +92,8 @@ body, html {
 }
 
 .kakaiba {
-	background-color: #2f466f;
+	/*background-color: #2f466f;*/
+	background-color: #202D43;
 	padding-top: 5vh;
 	padding-bottom:  2vh;
 }
@@ -125,7 +126,7 @@ body, html {
 
 .container {
 	text-align: center;
-	max-width: 1200px;
+	max-width: 1000px;
 	margin-bottom: 5vh;
 }
 
@@ -217,11 +218,37 @@ body, html {
 }
 
 .mountain-section {
+	/*background-color: #2f466f;*/
+	background-color: #202D43;
+	margin-bottom: 30px;
+	padding: 25px;
+	box-shadow: 0px 8px 6px -6px #000;
+	border-radius: 5px;
+}
 
+.mountain-section h3 {
+	font-size: 2.5rem;
+}
+
+
+.mountain-quick-desc {
+	padding-top: 20px;
+	padding-left: 10%;
+	list-style: none;
+	text-align: left;
+}
+
+.mountain-quick-desc p {
+	margin-bottom: 0;
+	padding-bottom: 10px
+}
+
+.mountain-desc {
+	text-align: justify;
 }
 
 hr {
-	background-color: white;
+	background-color: #fbfbf8;
 }
 
 .carousel-item {
@@ -293,8 +320,6 @@ hr {
 		display: none;
 	}
 
-	
-
 	.landing-brand {
 		margin-top: 100px;
 	}
@@ -325,6 +350,8 @@ hr {
 		font-size: 0.7rem;
 		padding: 0 10px;
 	}
+
+	/*mountain page*/
 
 }
 
